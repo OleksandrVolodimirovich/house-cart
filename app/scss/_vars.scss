@@ -1,0 +1,25 @@
+$default: #ffffff;
+$menu: #333333;
+$accent: #f26522;
+$form: #bdbdbd;
+$border: #793412;
+$line: #cacaca;
+$disc: #898989;
+$sale: #f6f6f6;
+$sale-disc: #7f7f7f;
+$get-dis: #707070;
+
+
+
+%roboto-400{
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: 400;
+}
+%roboto-500{
+    font-family: "Roboto-Medium";
+    font-weight: 500;
+}
+%roboto-700{
+    font-family: "Roboto-Bold", sans-serif;
+    font-weight: 700;
+}

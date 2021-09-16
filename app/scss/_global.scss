@@ -1,0 +1,70 @@
+html,
+body{
+    height: 100%;
+}
+body{
+    font-size: 16px;
+    @extend %roboto-400;
+    display: flex;
+    flex-direction: column;
+    background-color: $default;
+}
+.main{
+    flex-grow: 1;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.title{
+    @extend %roboto-700;
+    font-size: 40px;
+    line-height: 28px;
+    color: $menu;
+    text-align: center;
+    &-line{
+        position: relative;
+        &::before{
+            content: "";
+            width: 100px;
+            height: 7px;
+            position: absolute;
+            background-color: $accent;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+    }
+    &-features,
+    &-sell{
+        position: relative;
+        &::after{
+            content: "";
+            width: 280px;
+            height: 2px;
+            position: absolute;
+            bottom: -22px;
+            left: 50%;          
+            transform: translateX(-50%);
+        }
+    }
+    &-features{
+        &::after{
+            background-color: $line;
+            z-index: 1;
+        }
+    }
+    &-sell{
+        &::after{
+            background-color: $default;
+            bottom: -33px;
+            z-index: 1;
+        }
+    }
+}
+input,
+textarea{
+    outline-color: $accent;
+}

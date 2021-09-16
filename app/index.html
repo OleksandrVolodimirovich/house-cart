@@ -12,32 +12,34 @@
     <header class="header">
         <div class="header-top">
             <div class="container">
-                <a class="logo" href="/">
-                    <img src="images/logo.png" alt="logo">
-                </a>
-                <nav class="nav">
-                    <ul class="nav__items">
-                        <li class="nav__item">
-                            <a class="nav__item-link" href="#">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__item-link" href="#">About Us</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__item-link" href="#">How it works</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__item-link" href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="header-top__inner">
+                    <a class="logo" href="/">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                    <nav class="header-nav">
+                        <ul class="header-nav__items">
+                            <li class="header-nav__item">
+                                <a class="header-nav__item-link" href="#">Home</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a class="header-nav__item-link" href="#">About Us</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a class="header-nav__item-link" href="#">How it works</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a class="header-nav__item-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-        <div class="get">
+        <div class="header-get">
             <div class="container">
-                <div class="get__inner">
-                    <h1 class="get__title">Sell Your House Instantly</h1>
-                    <p class="get__discription">Simply tell us about your house and get a guaranteed 
+                <div class="header-get__inner">
+                    <h1 class="header-get__title">Sell Your House Instantly</h1>
+                    <p class="header-get__discription">Simply tell us about your house and get a guaranteed 
                         cash offer within 24 hours</p>
                     <form class="form" action="#">
                         <input class="form-input" type="text" placeholder="Submit your house details" required>
@@ -50,10 +52,10 @@
     <main class="main">
         <section class="features">
             <div class="container">
-                <h2 class="title">Key Features</h2>
+                <h2 class="title"><span class="title-line title-features">Key Features</span></h2>
                 <ul class="features__items">
                     <li class="features__item">
-                        <img class="features__item-ico" src="images/ico/ico- 1.png" alt="ico: features">
+                        <div class="features__item-ico features__item-ico-1"></div>
                         <h3 class="features__item-title">No Viewing or Showing to Stragers</h3>
                         <p class="features__item-discription">Nervous about your property adventure? 
                             Don’t be. Whether you're getting ready to buy 
@@ -63,17 +65,17 @@
                             It’s what we love to do.</p>
                     </li>
                     <li class="features__item">
-                        <img class="features__item-ico" src="images/ico/ico- 2.png" alt="ico: features">
+                        <div class="features__item-ico features__item-ico-2"></div>
                         <h3 class="features__item-title">Save Thousands of Dollars in Agent fees</h3>
                         <p class="features__item-discription">Large or small, condo or mansion, we can find 
                             it and get it for you at the price that's right. 
                             TICs? Fixer-uppers? Luxury? We can help with 
                             all of it. We always have a current 
                             list of available properties for you
-                            to check out.</p>
+                            tocheckout.</p>
                     </li>
                     <li class="features__item">
-                        <img class="features__item-ico" src="images/ico/ico- 3.png" alt="ico: features">
+                        <div class="features__item-ico features__item-ico-3"></div>
                         <h3 class="features__item-title">No Viewing or Showing to Stragers</h3>
                         <p class="features__item-discription">Nervous about your property adventure? 
                             Don’t be. Whether you're getting ready to buy 
@@ -89,12 +91,12 @@
         <secttion class="sell">
             <div class="sell-top">
                 <div class="container">
-                    <h2 class="title">Sell in 3 Easy Steps</h2>
+                    <h2 class="title"><span class="title-line title-sell">Sell in 3 Easy Steps</span></h2>
                     <ul class="sell-top__items">
                         <li class="sell-top__item">
                             <span class="sell-top__item-num">01</span>
                             <h4 class="sell-top__item-subtitle">Submit your house details</h4>
-                            <p class="sell-top__item-discription">Fill a quick form with details of your house</p>
+                            <p class="sell-top__item-discription">Fill a quick form with details ofyour house</p>
                         </li>
                         <li class="sell-top__item">
                             <span class="sell-top__item-num">04</span>
@@ -107,44 +109,35 @@
                             <p class="sell-top__item-discription">You can accept the offer, from offer to close within 3 days</p>
                         </li>
                     </ul>
+                    <div class="video">
+                        <div class="video__item" data-src="https://www.youtube.com/embed/3-BQmWTBY9Y?autoplay=1">
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="sell-video">
-
-            </div>
+            
             <div class="sell-question">
                 <div class="container">
                     <ul class="sell-question__items">
-                        <li class="sell-question__item">
-                            <ul class="sell-question__item-col">
-                                <li class="sell-question__item-row"></li>
-                                <li class="sell-question__item-row">How many days will it take to sell?</li>
-                                <li class="sell-question__item-row">Do I have to open house for public inspection?</li>
-                                <li class="sell-question__item-row">Do I have to repair house before selling</li>
-                                <li class="sell-question__item-row">Do I have to pay selling commission?</li>
-                                <li class="sell-question__item-row">Can I stay till my other house is ready?</li>
-                            </ul>
-                        </li>
-                        <li class="sell-question__item">
-                            <ul class="sell-question__item-col">
-                                <li class="sell-question__item-row">Housecart</li>
-                                <li class="sell-question__item-row">Receive an all cash offer in 24 hours</li>
-                                <li class="sell-question__item-row">No showing or public inspections</li>
-                                <li class="sell-question__item-row">No repairs or dress for sale </li>
-                                <li class="sell-question__item-row">Thousands of dollars in savings </li>
-                                <li class="sell-question__item-row">Stay till you move to your new house </li>
-                            </ul>
-                        </li>
-                        <li class="sell-question__item">
-                            <ul class="sell-question__item-col">
-                                <li class="sell-question__item-row">Traditional Home Sales</li>
-                                <li class="sell-question__item-row">House on market for over 3 months</li>
-                                <li class="sell-question__item-row">Spend Thousands of dollars in repair to make it ready for sale</li>
-                                <li class="sell-question__item-row">Pay thousands of dollars in agent fees</li>
-                                <li class="sell-question__item-row">Pay thousands of dollars in agent fees</li>
-                                <li class="sell-question__item-row">Move  immediately once sold, may need to double mortgage</li>
-                            </ul>
-                        </li>
+                        <li class="sell-question__item-row"></li>
+                        <li class="sell-question__item-row">Housecart</li>
+                        <li class="sell-question__item-row">Traditional Home Sales</li>
+                        <li class="sell-question__item-row">How many days will it take to sell?</li>
+                        <li class="sell-question__item-row sell-question__item-check">Receive an all cash offer in 24 hours</li>
+                        <li class="sell-question__item-row sell-question__item-check">House on market for over 3 months</li>
+                        <li class="sell-question__item-row">Do I have to open house for public inspection?</li>
+                        <li class="sell-question__item-row sell-question__item-check">No showing or public inspections</li>
+                        <li class="sell-question__item-row sell-question__item-check">Spend Thousands of dollars in repair to make it ready for sale</li>
+                        <li class="sell-question__item-row">Do I have to repair house before selling</li>
+                        <li class="sell-question__item-row sell-question__item-check">No repairs or dress for sale </li>
+                        <li class="sell-question__item-row sell-question__item-check">Pay thousands of dollars in agent fees</li>
+                        <li class="sell-question__item-row">Do I have to pay selling commission?</li>
+                        <li class="sell-question__item-row sell-question__item-check">Thousands of dollars in savings </li>
+                        <li class="sell-question__item-row sell-question__item-check">Pay thousands of dollars in agent fees</li>
+                        <li class="sell-question__item-row">Can I stay till my other house is ready?</li>
+                        <li class="sell-question__item-row sell-question__item-check">Stay till you move to your new house </li>
+                        <li class="sell-question__item-row sell-question__item-check">Move  immediately once sold, may need to double mortgage</li>
                     </ul>
                 </div>
             </div>
@@ -152,12 +145,14 @@
 
         <section class="subscribe">
             <div class="container">
-                <h2 class="subscribe__title">Subscribe</h2>
-                <p class="subscribe__disc">Sign up for real estate news.</p>
-                <form class="form" action="#">
-                    <input class="form-input form-ico" type="email" placeholder="Enter your email address" required>
-                    <button class="form-btn" type="submit">Subscribe</button>
-                </form>
+                <div class="subscribe__inner">
+                    <h2 class="subscribe__title">Subscribe</h2>
+                    <p class="subscribe__disc">Sign up for real estate news.</p>
+                    <form class="form" action="#">
+                        <input class="form-input form-ico" type="email" placeholder="Enter your email address" required>
+                        <button class="form-btn" type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
         </section>
 
