@@ -17,18 +17,21 @@
                         <img src="images/logo.png" alt="logo">
                     </a>
                     <nav class="header-nav">
+                        <div class="header-nav__mob">
+                            <span class="header-nav__mob-line"></span>
+                        </div>
                         <ul class="header-nav__items">
                             <li class="header-nav__item">
-                                <a class="header-nav__item-link" href="#">Home</a>
+                                <a class="header-nav__item-link" href="/">Home</a>
                             </li>
                             <li class="header-nav__item">
-                                <a class="header-nav__item-link" href="#">About Us</a>
+                                <a class="header-nav__item-link" href="#about">About Us</a>
                             </li>
                             <li class="header-nav__item">
-                                <a class="header-nav__item-link" href="#">How it works</a>
+                                <a class="header-nav__item-link" href="#how">How it works</a>
                             </li>
                             <li class="header-nav__item">
-                                <a class="header-nav__item-link" href="#">Contact Us</a>
+                                <a class="header-nav__item-link" href="#contact">Contact Us</a>
                             </li>
                         </ul>
                     </nav>
@@ -49,8 +52,8 @@
             </div>
         </div>
     </header>
-    <main class="main">
-        <section class="features">
+
+        <section class="features" id="about">
             <div class="container">
                 <h2 class="title"><span class="title-line title-features">Key Features</span></h2>
                 <ul class="features__items">
@@ -88,7 +91,7 @@
             </div>
         </section>
 
-        <secttion class="sell">
+        <section class="sell" id="how">
             <div class="sell-top">
                 <div class="container">
                     <h2 class="title"><span class="title-line title-sell">Sell in 3 Easy Steps</span></h2>
@@ -141,7 +144,7 @@
                     </ul>
                 </div>
             </div>
-        </secttion>
+        </section>
 
         <section class="subscribe">
             <div class="container">
@@ -156,33 +159,32 @@
             </div>
         </section>
 
-        <section class="active">
+        <section class="active" id="contact">
             <div class="container">
                 <div class="active__wrapper">
                     <div class="active-get">
-                        <h1 class="active-get__title">Sell Your House Instantly</h1>
+                        <h2 class="active-get__title">Sell Your House Instantly</h2>
                         <p class="active-get__discription">Simply tell us about your house and get a guaranteed 
                             cash offer within 24 hours</p>
                         <form class="active-get__form" action="#">
-                            <input class="active-get__form-input" type="text" placeholder="Submit your house details">
+                            <input class="active-get__form-input" type="text" placeholder="Submit your house details" required>
                             <button class="active-get__form-btn" type="submit">Get your offer</button>
                         </form>
                     </div>
                     <div class="active-now">
                         <h2 class="active-now__title">Get in Touch</h2>
                         <form class="active-now__form" action="#">
-                            <input class="active-now__form-input" type="text" placeholder="Your name">
-                            <input class="active-now__form-input" type="email" placeholder="Your email address">
-                            <input class="active-now__form-input" type="tel" placeholder="Your phone number">
-                            <input class="active-now__form-input" type="text" placeholder="Subject">
-                            <textarea class="active-now__form-input" type="text" placeholder="Leave a message"></textarea>
+                            <input class="active-now__form-input" type="text" placeholder="Your name" required>
+                            <input class="active-now__form-input" type="email" placeholder="Your email address" required>
+                            <input class="active-now__form-input" type="tel" placeholder="Your phone number" required>
+                            <input class="active-now__form-input" type="text" placeholder="Subject" required>
+                            <textarea class="active-now__form-input" placeholder="Leave a message" required></textarea>
                         </form>
                         <button class="active-now__form-btn">Submit Now</button>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </section> 
 
     <footer class="footer">
         <p class="footer-copy">

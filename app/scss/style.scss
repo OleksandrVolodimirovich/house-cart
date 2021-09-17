@@ -4,6 +4,7 @@
 @import 'global';
 
 .header{
+    z-index: 2;
     &-top{
         padding-bottom: 6px;
         &__inner{
@@ -13,6 +14,9 @@
         }
     }
     &-nav{
+        &__mob{
+            display: none;
+        }
         &__items{
             display: flex;
         }
@@ -20,6 +24,7 @@
             margin-left: 40px;
         }
         &__item{
+            transition: all .3s;
             &:hover{
                 transform: scale(1.1);
                 & .header-nav__item-link{
@@ -39,27 +44,8 @@
         background-color: $accent;
         overflow: hidden;
         position: relative;
-        ::before{
-            content: "";
-            width: 723px;
-            height: 551px;
-            position: absolute;
-            background-image: url("../images/header-left.png");
-            background-repeat: no-repeat;
-            left: 0;
-            bottom: -40px;
-        }
-        ::after{
-            content: "";
-            width: 961px;
-            height: 482px;
-            position: absolute;
-            background-image: url("../images/header-right.png");
-            background-repeat: no-repeat;
-            right: 0;
-            bottom: -95px;
-
-        }
+        background: url("../images/sell-bg.jpg") no-repeat center;
+        background-size: cover;
         &__inner{
             display: flex;
             flex-direction: column;
@@ -67,8 +53,6 @@
             align-items: center;
             min-height: calc(100vh - 80px);
             max-height: 860px;
-            animation: scale .6s ease-out;
-            animation-delay: .6s;
         }
         &__title{
             @extend %roboto-700;
@@ -101,14 +85,17 @@
     max-width: 749px;
     width: 100%;
     &-input{
+        position: relative;
         background-color: $default;
         color: $form;
         width: 100%;
         border: none;
         line-height: 60px;
         padding: 2px 22px;
+        z-index: 50;
     }
     &-btn{
+        position: relative;
         @extend %roboto-700;
         max-width: 166px;
         width: 100%;
@@ -117,6 +104,12 @@
         background-color: $accent;
         border: 0;
         padding: 0;
+        z-index: 50;
+        transition: all .3s;
+        &:hover{
+            background-color: $border;
+            box-shadow: inset -3px 4px 2px 4px #161d36;
+        }
     }
     &-ico{
         padding-left: 70px;
@@ -141,6 +134,10 @@
         box-shadow: 0px 0px 24px 0px rgba(64, 199, 255, 0.32);
         padding: 48px 26px 40px;
         max-width: 370px;
+        transition: all .3s;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
     &__item-ico{
         width: 128px;
@@ -217,6 +214,11 @@
             padding: 57px 10px 0;
             text-align: center;
             width: 370px;
+            z-index: 50;
+            transition: all .3s;
+            &:hover{
+                transform: translateY(10px)
+            }
         }
         &__item-num{
             @extend %roboto-700;
@@ -279,12 +281,16 @@
         
         &__items{
             display: grid;
-            grid-gap: 1px 10px;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 1px;
+            grid-template-columns: repeat(3, 1fr);
         }
         &__item-row{
+            display: flex; 
+            flex-flow: column wrap; 
+            max-height: 384px;
             line-height: 23px;
-            width: 384px;
+            width: 100%;
             padding: 20px 0;
             background-color: $accent;
             color: $default;
@@ -355,6 +361,7 @@
     }
     & .form{
         max-width: 825px;
+        z-index: 2;
     }
 }
 
@@ -408,6 +415,11 @@
             background-color: $accent;
             color: $default;
             border: 0;
+            transition: all .3s;
+            &:hover{
+                background-color: $border;
+                box-shadow: inset -3px 4px 2px 4px #161d36;
+            }
         }
     }
     &-now{
@@ -442,6 +454,11 @@
             width: 213px;
             margin-top: 15px;
             margin-left: auto;
+            transition: all .3s;
+            &:hover{
+                background-color: $border;
+                box-shadow: inset -3px 4px 2px 4px #161d36;
+            }
         }
     }
 }
@@ -454,8 +471,8 @@
     color:$form;
     background-color: #1e1e1e;
     padding: 20px 0;
+    text-align: center;
+    overflow-wrap: break-word;
 }
-
-
 @import 'media';
 

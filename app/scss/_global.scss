@@ -8,6 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: $default;
+    behavior: s;
 }
 .main{
     flex-grow: 1;
@@ -67,4 +68,5 @@ body{
 input,
 textarea{
     outline-color: $accent;
+    color: $menu;
 }
