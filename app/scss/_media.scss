@@ -1,4 +1,4 @@
-@media (max-width:1670px){
+@media (max-width:1690px){
     .header-get__title{
         margin: 140px 0 22px 0;
     }
@@ -6,7 +6,9 @@
         left: -75px;
     }
     .sell-top::after{
-        right: -135px;
+        background-image: url(../images/sell-right-1690.png);
+        width: 482px;
+        height: 446px;
     }
 }
 @media (max-width:1140px){
@@ -247,9 +249,6 @@
         &-nav__items{
             margin-top: 20%;
         }
-    }
-    .sell-question__items {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
 @media (max-width:320px){

@@ -195,8 +195,10 @@
             content: "";
             position: absolute;
             background-image: url("../images/sell-right.png");
+            background-size: cover;
+            background-repeat: no-repeat;
             width: 596px;
-            height: 551px;
+            height: 550px;
             bottom: -100px;
             right: 0;
         }
